@@ -9,6 +9,7 @@ const StyledVideo = styled.video`
     position: absolute;
     max-width: 100%;
     z-index: -1;
+    filter: saturate(150%) brightness(90%);
 `
 
 export const VideoBackground: React.FC = function(){
