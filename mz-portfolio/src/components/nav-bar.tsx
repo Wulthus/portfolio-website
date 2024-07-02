@@ -1,18 +1,65 @@
 import styled from "styled-components";
+import { NavButton } from "./nav-button";
 
 const StyledNav = styled.nav`
+    width: 80%;
+    height: 100%;
+
+    position: relative;
+    left: 20%;
+
+    border-right: solid 3px var(--main-blue);
+    border-left: solid 3px var(--main-blue);
+    background-color: var(--main-blue-dark-transparent);
+    box-shadow: 0rem 0rem 10rem 1rem var(--main-blue-dark-transparent);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+
+    border-radius: 10% / 50%;
+
+    transition: all .2s;
+
+    &:hover {
+        background-color: var(--main-blue-very-light);
+        box-shadow: 0rem 0rem 10rem 3rem var(--main-blue-dark-transparent);
+    }
+`
+
+const Name = styled.hgroup`
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--main-blue-light);
+    text-shadow: 0px 0px 35px var(--main-blue);
+    text-align: center;
+`
+
+const Buttons = styled.div`
     width: 100%;
     height: 100%;
 
-    clip-path: polygon(90% 0, 100% 10%, 100% 90%, 90% 100%, 0 100%, 0 0);
-
-    border-right: solid 5px var(--main-blue);
-    background-color: var(--main-blue-transparent);
-    box-shadow: 0.3rem 0rem 2rem .5rem var(--main-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
 `
 
 export const NavBar: React.FC = function(){
     return (
-        <StyledNav>Navbar</StyledNav>
+        <StyledNav>
+            <Name>
+                <br></br>
+                <h1>Michał Żywicki</h1>
+                <p>Web Developer</p>
+            </Name> 
+            <Buttons>
+                <NavButton name="1 Button"/>
+                <NavButton name="2 Button"/>
+                <NavButton name="3 Button"/>
+                <NavButton name="4 Button"/>
+            </Buttons>
+        </StyledNav>
     )
 }

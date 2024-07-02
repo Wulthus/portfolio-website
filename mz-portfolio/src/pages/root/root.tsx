@@ -13,13 +13,13 @@ const StyledRoot = styled.div`
 `
 
 const StyledAside = styled.aside`
-  width: 20%;
+  width: 30%;
   min-height: 100%;
 
 `
 
 const StyledMain = styled.main`
-  width: 80%;
+  width: 70%;
   height: 100%;
 `
 
