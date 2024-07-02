@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import { NavBar } from "../../components/nav-bar";
 import { VideoBackground } from "../../components/video-background";
 
@@ -9,6 +10,7 @@ const StyledRoot = styled.div`
   min-width: 100%;
   min-height: 100%;
   display: flex;
+  gap: 3%;
 
 `
 
@@ -33,7 +35,7 @@ export const RootPage = function(){
             <NavBar />
           </StyledAside>
           <StyledMain>
-
+            <Outlet />
           </StyledMain>
         </StyledRoot>
 

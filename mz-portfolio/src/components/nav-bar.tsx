@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NavButton } from "./nav-button";
+import { NavLink } from "./nav-link";
 
 const StyledNav = styled.nav`
     width: 80%;
@@ -55,10 +55,10 @@ export const NavBar: React.FC = function(){
                 <p>Web Developer</p>
             </Name> 
             <Buttons>
-                <NavButton name="1 Button"/>
-                <NavButton name="2 Button"/>
-                <NavButton name="3 Button"/>
-                <NavButton name="4 Button"/>
+                <NavLink to="/" name="1 Button"/>
+                <NavLink to="/" name="2 Button"/>
+                <NavLink to="/" name="3 Button"/>
+                <NavLink to="/contact" name="Contact"/>
             </Buttons>
         </StyledNav>
     )

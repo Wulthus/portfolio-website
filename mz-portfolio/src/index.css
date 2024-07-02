@@ -19,6 +19,7 @@ time, mark, audio, video {
   font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
+  text-decoration: none;
 }
 
 article, aside, details, figcaption, figure,
