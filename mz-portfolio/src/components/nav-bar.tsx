@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { NavLink } from "./nav-link";
+import { useTranslation } from "react-i18next";
+import i18next, { changeLanguage } from "i18next";
 
 const StyledNav = styled.nav`
     width: 80%;
@@ -28,16 +30,32 @@ const StyledNav = styled.nav`
 `
 
 const Name = styled.hgroup`
+
+    width: 92%;
+    height: 30%;
+
+    padding-left: 4%;
+    padding-right: 4%;
     font-size: 3rem;
     font-weight: 600;
     color: var(--main-blue-light);
     text-shadow: 0px 0px 35px var(--main-blue);
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+`
+
+const SubTitle = styled.p`
+    font-size: 2.5rem;
 `
 
 const Buttons = styled.div`
     width: 100%;
-    height: 100%;
+    height: 70%;
 
     display: flex;
     flex-direction: column;
@@ -47,18 +65,25 @@ const Buttons = styled.div`
 `
 
 export const NavBar: React.FC = function(){
+
+    const { t } = useTranslation();
+    const setLanguage = (language: string) => {
+        i18next.changeLanguage(language);
+    }
+
     return (
         <StyledNav>
             <Name>
-                <br></br>
                 <h1>Michał Żywicki</h1>
-                <p>Web Developer</p>
+                <SubTitle>{t('title')}</SubTitle>
             </Name> 
             <Buttons>
                 <NavLink to="/" name="1 Button"/>
                 <NavLink to="/" name="2 Button"/>
                 <NavLink to="/" name="3 Button"/>
-                <NavLink to="/contact" name="Contact"/>
+                <NavLink to="/contact" name={t('contact')}/>
+                <button onClick={()=>changeLanguage('pl')}>PL</button>
+                <button onClick={()=>changeLanguage('en')}>EN</button>
             </Buttons>
         </StyledNav>
     )
