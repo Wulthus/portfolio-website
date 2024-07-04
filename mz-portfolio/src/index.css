@@ -63,8 +63,11 @@ table {
   --main-blue-light: rgb(134, 201, 252); 
   --main-blue: rgb(83, 178, 255);
   --main-blue-dark-transparent: rgba(0, 45, 82, 0.86);
-  --gnu-grey: #222222;
   --experimental: rgba(0, 45, 82, 0.856);
+  --main-gradient-transparent: linear-gradient(105deg, rgba(0, 31, 56, 0.86) 0%, rgba(0, 63, 114, 0.86) 100%);
+  --main-border: solid 3px var(--main-blue-light);
+  --main-border-sm: solid 1px var(--main-blue-light);
+  --main-transition: all .15s;
 }
 
 /*--------------------------------------------------------ELEMENTS-----*/
