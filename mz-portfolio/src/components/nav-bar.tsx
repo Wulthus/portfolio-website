@@ -27,6 +27,8 @@ const StyledNav = styled.nav`
         border-left: solid 3px var(--main-blue-very-light);
         box-shadow: 0rem 0rem 10rem 3rem var(--main-blue-dark-transparent);
     }
+
+    /* animation: grow .25s; */
 `
 
 const Name = styled.hgroup`
@@ -83,7 +85,7 @@ export const NavBar: React.FC = function(){
             </Name> 
             <Buttons>
                 <NavLink to="/" name={t('welcome')}/>
-                <NavLink to="/" name="2 Button"/>
+                <NavLink to="/" name={t('portfolio')}/>
                 <NavLink to="/" name={t('techstack')}/>
                 <NavLink to="/contact" name={t('contact')}/>
             </Buttons>

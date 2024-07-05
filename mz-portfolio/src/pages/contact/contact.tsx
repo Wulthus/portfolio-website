@@ -1,10 +1,11 @@
 import styled from "styled-components"
 
+const StyledParagraph = styled.p`
+color: #fff;
+`
+
 export const ContactPage = function(){
 
-    const StyledParagraph = styled.p`
-        color: #fff;
-    `
 
     return (
         <StyledParagraph>Contact Page!!!</StyledParagraph>

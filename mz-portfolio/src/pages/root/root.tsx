@@ -3,10 +3,11 @@ import { NavBar } from "../../components/nav-bar";
 import { VideoBackground } from "../../components/video-background";
 import { initReactI18next } from "react-i18next";
 import { translations } from "../../framework/i18n/translations";
+import { LanguageSelect } from "../../components/language-select/language-select";
 
 import styled from "styled-components";
 import i18next from "i18next";
-import { LanguageSelect } from "../../components/language-select/language-select";
+
 
 
 
@@ -45,13 +46,18 @@ const StyledMain = styled.main`
   width: 70%;
   min-height: 90%;
 
-  padding: 2% 3%;
+  padding: 2% 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
 //----------------------------------------------------------COMPONENT FUNCTION
 
 
 export const RootPage = function(){
+
 
     return (
         <>
