@@ -13,6 +13,7 @@ const StyledNav = styled.nav`
     border-left: var(--main-border);
     background-color: var(--main-blue-dark-transparent);
     background: var(--main-gradient-transparent);
+    /* background-image: url("embedded.webp"); */
     box-shadow: 0rem 0rem 10rem 1rem var(--main-blue-dark-transparent);
 
     display: flex;
@@ -26,9 +27,9 @@ const StyledNav = styled.nav`
         border-right: solid 3px var(--main-blue-very-light);
         border-left: solid 3px var(--main-blue-very-light);
         box-shadow: 0rem 0rem 10rem 3rem var(--main-blue-dark-transparent);
+        color: var(--main-blue-very-light);
     }
 
-    /* animation: grow .25s; */
 `
 
 const Name = styled.hgroup`
@@ -40,7 +41,7 @@ const Name = styled.hgroup`
     padding-right: 4%;
     font-size: 3rem;
     font-weight: 600;
-    color: var(--main-blue-light);
+    color: inherit;
     text-shadow: 0px 0px 35px var(--main-blue);
     text-align: center;
 

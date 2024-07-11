@@ -1,13 +1,12 @@
-import styled from "styled-components"
-
-const StyledParagraph = styled.p`
-color: #fff;
-`
+import { Section } from "../../components/section";
 
 export const ContactPage = function(){
 
 
     return (
-        <StyledParagraph>Contact Page!!!</StyledParagraph>
+        <Section>
+            Contact Page
+        </Section>
+
     )
 }

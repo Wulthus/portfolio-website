@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next"
+import { Section } from "../../components/section";
+
 import styled from "styled-components";
 
 const Title = styled.h2`
@@ -11,36 +13,36 @@ const Title = styled.h2`
 `
 
 const StyledParagraph = styled.p`
-    margin-top: 4%;
+    margin-top: 8%;
     color: var(--main-blue-lighter);
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     font-weight: 600;
     text-align: center;
     text-shadow: 0px 0px 35px var(--main-blue);
 `
 
-const StyledSection = styled.section`
-    padding: 5%;
+// const StyledSection = styled.section`
+//     padding: 5%;
 
-    background: var(--main-gradient-transparent);
-    box-shadow: 0rem 0rem 3rem 1rem var(--main-blue-dark-transparent);
+//     background: var(--main-gradient-transparent);
+//     box-shadow: 0rem 0rem 3rem 1rem var(--main-blue-dark-transparent);
 
-    /* border-right: var(--main-border);
-    border-bottom: var(--main-border); */
+//     /* border-right: var(--main-border);
+//     border-bottom: var(--main-border); */
 
-    animation: 0.25s grow;
-`
+//     animation: 0.25s grow;
+// `
 
 export const WelcomePage: React.FC = function(){
 
     const { t } = useTranslation();
 
     return (
-        <StyledSection>
+        <Section>
             <Title>{t("welcome-h1")}</Title>
             <StyledParagraph>{t("welcome-p1")}</StyledParagraph>
             <StyledParagraph>{t('welcome-p2')}</StyledParagraph>
             <StyledParagraph>{t('welcome-p3')}</StyledParagraph>
-        </StyledSection>
+        </Section>
     )
 }

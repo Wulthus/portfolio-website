@@ -56,6 +56,7 @@ table {
   overflow: hidden;
 
   font-family: "Rajdhani", sans-serif;
+  color: var(--main-blue-lighter);
 
   /*-------------------------------------------------------VARIABLES----*/
 
