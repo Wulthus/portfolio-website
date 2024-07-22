@@ -12,6 +12,7 @@ const StyledSection = styled.section`
     overflow-y: scroll;
 
     animation: 0.25s grow;
+    position: relative;
 `
 
 interface SectionProps {

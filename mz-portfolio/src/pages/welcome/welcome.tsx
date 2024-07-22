@@ -1,16 +1,17 @@
 import { useTranslation } from "react-i18next"
 import { Section } from "../../components/section";
+import { Title } from "../../components/title";
 
 import styled from "styled-components";
 
-const Title = styled.h2`
-    margin-bottom: 6%;
-    color: var(--main-blue-lighter);
-    font-size: 3.5rem;
-    font-weight: 700;
-    text-align: center;
-    text-shadow: 0px 0px 35px var(--main-blue);
-`
+// const Title = styled.h2`
+//     margin-bottom: 6%;
+//     color: var(--main-blue-lighter);
+//     font-size: 3.5rem;
+//     font-weight: 700;
+//     text-align: center;
+//     text-shadow: 0px 0px 35px var(--main-blue);
+// `
 
 const StyledParagraph = styled.p`
     margin-top: 8%;
