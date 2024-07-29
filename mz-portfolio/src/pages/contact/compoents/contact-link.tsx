@@ -3,15 +3,14 @@ import styled from "styled-components"
 
 const StyledLink = styled.a`
 
-
     display: block;
 
     width: 25px;
     height: 25px;
 
-    border-radius: 50%;
+    /* border-radius: 50%;
     border: var(--main-border-sm);
-    color: var(--main-blue);
+    color: var(--main-blue); */
     
     padding: 50%;
     display: flex;
@@ -27,6 +26,9 @@ interface LinkProps {
 
 export const ContactLink = function({ href, children }: LinkProps){
     return (
-        <StyledLink href={href}>{children}</StyledLink>
+        <li>
+            <StyledLink href={href}>{children}</StyledLink>
+        </li>
+
     )
 }
