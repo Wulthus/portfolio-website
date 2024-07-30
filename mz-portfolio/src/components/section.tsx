@@ -4,7 +4,6 @@ import styled from "styled-components";
 const StyledSection = styled.section`
     padding: 5%;
 
-
     background-image: url("embedded.webp");
     /* background: var(--main-gradient-transparent); */
     box-shadow: 0rem 0rem 3rem 1rem var(--main-blue-dark-transparent);
