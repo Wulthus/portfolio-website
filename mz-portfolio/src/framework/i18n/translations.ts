@@ -20,7 +20,7 @@ export const translations = {
       "portfolio": "Portfolio",
       "techstack": "Technologie",
       "contact": "Kontakt",
-      "welcome-h1":"Potrzebujesz strony? Załatwione!",
+      "welcome-h1":"Potrzebujesz zaistnieć w sieci? Załatwione!",
       "welcome-p1": "75% klientów przyznaje, że ocenia rzetelność firmy na podstawie strony internetowej",
       "welcome-p2": "80% uzna firmę za nierzetelną z powodu starej strony interetowej",
       "welcome-p3": "Nie pozwól sobie na to!",

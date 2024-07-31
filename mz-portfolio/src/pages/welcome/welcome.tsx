@@ -1,17 +1,9 @@
 import { useTranslation } from "react-i18next"
-import { Section } from "../../components/section";
 import { Title } from "../../components/title";
 
 import styled from "styled-components";
+import { WelcomePhoto } from "./components/welcome-photo";
 
-// const Title = styled.h2`
-//     margin-bottom: 6%;
-//     color: var(--main-blue-lighter);
-//     font-size: 3.5rem;
-//     font-weight: 700;
-//     text-align: center;
-//     text-shadow: 0px 0px 35px var(--main-blue);
-// `
 
 const StyledParagraph = styled.p`
     margin-top: 8%;
@@ -22,28 +14,36 @@ const StyledParagraph = styled.p`
     text-shadow: 0px 0px 35px var(--main-blue);
 `
 
-// const StyledSection = styled.section`
-//     padding: 5%;
+const WelcomeContent = styled.div`
+    padding: 5%;
 
-//     background: var(--main-gradient-transparent);
-//     box-shadow: 0rem 0rem 3rem 1rem var(--main-blue-dark-transparent);
+    background-image: url("embedded.webp");
+    box-shadow: 0rem 0rem 3rem 1rem var(--main-blue-dark-transparent);
 
-//     /* border-right: var(--main-border);
-//     border-bottom: var(--main-border); */
+    /* overflow-y: scroll; */
+`
 
-//     animation: 0.25s grow;
-// `
+const WelcomeSection = styled.section`
+    Width: 90%;
+    animation: 0.25s grow;
+    position: relative;
+
+`
 
 export const WelcomePage: React.FC = function(){
 
     const { t } = useTranslation();
 
     return (
-        <Section>
-            <Title>{t("welcome-h1")}</Title>
-            <StyledParagraph>{t("welcome-p1")}</StyledParagraph>
-            <StyledParagraph>{t('welcome-p2')}</StyledParagraph>
-            <StyledParagraph>{t('welcome-p3')}</StyledParagraph>
-        </Section>
+        <WelcomeSection>
+            <WelcomePhoto />
+            <WelcomeContent>
+                <Title>{t("welcome-h1")}</Title>
+                <StyledParagraph>{t("welcome-p1")}</StyledParagraph>
+                <StyledParagraph>{t('welcome-p2')}</StyledParagraph>
+                <StyledParagraph>{t('welcome-p3')}</StyledParagraph>
+            </WelcomeContent>
+        </WelcomeSection>
+
     )
 }

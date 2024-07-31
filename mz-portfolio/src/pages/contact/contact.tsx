@@ -3,7 +3,6 @@ import { Section } from "../../components/section";
 import { Title } from "../../components/title";
 import { ContactLink } from "./compoents/contact-link";
 import { ContactIcon } from "./compoents/contact-icons";
-import { ContactPhoto } from "./compoents/contact.photo";
 
 import styled from "styled-components";
 
@@ -16,17 +15,11 @@ import styled from "styled-components";
         gap: 5%;
     `
 
-    const ContactWrapper = styled.div`
-        position: relative;
-    `
-
 export const ContactPage = function(){
 
     const { t } = useTranslation();
 
     return (
-        <ContactWrapper>
-            <ContactPhoto />
             <Section>
                 <Title>{t("contact-h1")}</Title>
                 <address>
@@ -41,7 +34,6 @@ export const ContactPage = function(){
                     </ContactLinks>
                 </address>
             </Section>
-        </ContactWrapper>
 
 
     )
