@@ -8,15 +8,21 @@ const setLanguage = (language: string) => {
 
 const SelectionBox = styled.article`
 
-    padding: 1rem 0.5rem;
+    aspect-ratio: 1/1;
+
+    width: 17.5%;
 
     position: absolute;
-    top: 0%;
-    right: 0%;
+    left: 110%;
+    bottom: 0%;
     background: var(--main-gradient-transparent);
     border-left: var(--main-border-sm);
     border-right: var(--main-border-sm);
-    border-radius: 10% / 50%;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 
 const SelectionButton = styled.button`

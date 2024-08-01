@@ -1,12 +1,13 @@
 import { Outlet } from "react-router-dom";
-import { NavBar } from "../../components/nav-bar";
 import { VideoBackground } from "../../components/video-background";
 import { initReactI18next } from "react-i18next";
 import { translations } from "../../framework/i18n/translations";
 import { LanguageSelect } from "../../components/language-select";
+import { NavWheel } from "../../components/nav-wheel/nav-wheel";
 
 import styled from "styled-components";
 import i18next from "i18next";
+
 
 
 
@@ -34,14 +35,15 @@ const StyledRoot = styled.div`
 
 `
 
-const StyledAside = styled.aside`
-  width: 30%;
-  min-height: 100%;
+// const StyledAside = styled.aside`
+//   width: 30%;
+//   min-height: 100%;
 
-`
+// `
 
 const StyledMain = styled.main`
-  width: 70%;
+  /* width: 70%; */
+  width: 100%;
   min-height: 90%;
 
   padding: 2% 5%;
@@ -61,10 +63,6 @@ export const RootPage = function(){
         <>
         <VideoBackground>
           <StyledRoot>
-            <LanguageSelect />
-            <StyledAside>
-              <NavBar />
-            </StyledAside>
             <StyledMain>
               <Outlet />
             </StyledMain>

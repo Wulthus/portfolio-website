@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { RootPage } from '../../pages/root/root';
 import { ContactPage } from '../../pages/contact/contact';
 import { WelcomePage } from '../../pages/welcome/welcome';
+import { NavWheel } from '../../components/nav-wheel/nav-wheel';
 
 export const portfolioRouter = createBrowserRouter([
     {
@@ -10,7 +11,7 @@ export const portfolioRouter = createBrowserRouter([
       children: [
         {
           path: "/",
-          element: <WelcomePage />
+          element: <NavWheel />
         },
         {
           path:"/contact",

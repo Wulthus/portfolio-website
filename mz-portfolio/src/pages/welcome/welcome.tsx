@@ -3,6 +3,7 @@ import { Title } from "../../components/title";
 
 import styled from "styled-components";
 import { WelcomePhoto } from "./components/welcome-photo";
+import { WelcomeCta } from "./components/welcome-cta";
 
 
 const StyledParagraph = styled.p`
@@ -19,6 +20,7 @@ const WelcomeContent = styled.div`
 
     background-image: url("embedded.webp");
     box-shadow: 0rem 0rem 3rem 1rem var(--main-blue-dark-transparent);
+    border-radius: 5% / 40%;
 
     /* overflow-y: scroll; */
 `
@@ -43,6 +45,7 @@ export const WelcomePage: React.FC = function(){
                 <StyledParagraph>{t('welcome-p2')}</StyledParagraph>
                 <StyledParagraph>{t('welcome-p3')}</StyledParagraph>
             </WelcomeContent>
+            <WelcomeCta />
         </WelcomeSection>
 
     )

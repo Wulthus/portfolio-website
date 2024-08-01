@@ -9,18 +9,20 @@ export interface NavLinkProps {
 
 const StyledNavLink = styled(Link)`
 
-    padding: 4% 0%;
-    width: 75%;
+    padding: 5% 5%;
 
     font-size: 2rem;
     font-weight: 500;
     color: var(--main-blue-light);
     text-shadow: 0px 0px 35px var(--main-blue);
     text-align: center;
-    border-radius: 15px 70px 15px 70px;
+    border-radius: 50%;
+    /* border-radius: 15px 70px 15px 70px; */
 
-    background-color: transparent;
+    /* background-color: transparent; */
     border: 2px solid var(--main-blue);
+    
+    background-color: var(--main-blue-dark-transparent);
 
     transition: var(--main-transition);
 

@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 const PhotoWrapper = styled.article`
 
-    width: 20%;
+    width: 33%;
     z-index: 1;
 
     position: absolute;
-    transform: translateX(-50%) translateY(-50%);
-    left: 50%;
+    /* transform: translateX(-50%) translateY(-50%); */
+    left: 75%;
+    bottom: 0%;
 `
 
 const StyledPhoto = styled.img`
@@ -18,7 +19,7 @@ const StyledPhoto = styled.img`
     
 `
 
-export const WelcomePhoto = function(){
+export const NavWheelPhoto = function(){
     return(
         <PhotoWrapper>
             <StyledPhoto src="mz.webp" alt="Photograph of Michal Zywicki - web developer"/>
