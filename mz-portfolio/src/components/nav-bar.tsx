@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NavLink } from "./nav-link";
+import { NavLink } from "./nav-wheel/components/nav-link";
 import { useTranslation } from "react-i18next";
 
 const StyledNav = styled.nav`

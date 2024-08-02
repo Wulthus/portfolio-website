@@ -13,8 +13,8 @@ const SelectionBox = styled.article`
     width: 17.5%;
 
     position: absolute;
-    left: 110%;
-    bottom: 0%;
+    left: 50%;
+    bottom: -10%;
     background: var(--main-gradient-transparent);
     border-left: var(--main-border-sm);
     border-right: var(--main-border-sm);

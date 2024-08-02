@@ -89,5 +89,17 @@ table {
   }
 }
 
+@keyframes textBlink {
+  0%{
+    color: var(--main-blue-very-light);
+  }
+  50%{
+    color: var(--main-blue-light);
+  }
+  100%{
+    color: var(--main-blue-very-light);
+  }
+}
+
 
 

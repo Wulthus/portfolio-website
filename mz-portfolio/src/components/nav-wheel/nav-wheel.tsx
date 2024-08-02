@@ -2,7 +2,7 @@ import styled from "styled-components";
 // import { NavLink } from "../nav-link";
 import { useTranslation } from "react-i18next";
 import { NavWheelPhoto } from "./components/nav-wheel-photo";
-import { NavLink } from "../nav-link";
+import { NavLink } from "./components/nav-link";
 import { LanguageSelect } from "../language-select";
 
 
@@ -12,12 +12,13 @@ const NavSection = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 3%;
 `
 
 const StyledNav = styled.nav`
     aspect-ratio: 1/1;
     width: 20%;
-    padding: 5%;
+    padding: 3%;
 
     border-right: var(--main-border);
     border-left: var(--main-border);
@@ -75,17 +76,17 @@ const SubTitle = styled.p`
 `
 
 const Buttons = styled.ul`
-    width: 33%;
-    height: 33%;
 
-    position: absolute;
-    left: 10%;
+    height: 60%;
+    width: 15%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10%;
+
+    animation: grow .25s;
 `
 
 export const NavWheel: React.FC = function(){
@@ -95,6 +96,12 @@ export const NavWheel: React.FC = function(){
 
     return (
         <NavSection>
+            <Buttons>
+                <NavLink to="/" name={t('welcome')}/>
+                <NavLink to="/" name={t('portfolio')}/>
+                <NavLink to="/" name={t('techstack')}/>
+                <NavLink to="/contact" name={t('contact')}/>
+            </Buttons>
             <StyledNav>
                 <NavWheelPhoto />
                 <LanguageSelect />
@@ -103,12 +110,7 @@ export const NavWheel: React.FC = function(){
                     <SubTitle>{t('title')}</SubTitle>
                 </Name> 
             </StyledNav>
-            <Buttons>
-                <NavLink to="/" name={t('welcome')}/>
-                <NavLink to="/" name={t('portfolio')}/>
-                <NavLink to="/" name={t('techstack')}/>
-                <NavLink to="/contact" name={t('contact')}/>
-            </Buttons>
+
         </NavSection>
     )
 }
