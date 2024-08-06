@@ -12,11 +12,11 @@ const VideoWrapper = styled.div`
 const StyledVideo = styled.video`
     position: absolute;
     
-    height: 100%;
+    width: 1900px;
 
     object-fit: cover;
 
-    filter: hue-rotate(65deg) brightness(80%);
+    filter: hue-rotate(247deg) brightness(85%);
 
     top: 50%;
     left: 50%;
@@ -34,7 +34,7 @@ export const VideoBackground = function({ children }: VideoBackgroundProps){
     return (
         <VideoWrapper>
           <StyledVideo autoPlay={true} muted loop>
-            <source src="data-compressed.webm" type='video/mp4' />
+            <source src="nodes.webm" type='video/mp4' />
           </StyledVideo>
           { children }
         </VideoWrapper>

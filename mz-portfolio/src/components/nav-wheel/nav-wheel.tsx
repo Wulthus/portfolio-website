@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import { NavLink } from "../nav-link";
 import { useTranslation } from "react-i18next";
 import { NavWheelPhoto } from "./components/nav-wheel-photo";
 import { NavLink } from "./components/nav-link";
@@ -24,7 +23,7 @@ const StyledNav = styled.nav`
     border-left: var(--main-border);
     box-shadow: 0rem 0rem 10rem 1rem var(--main-blue-dark-transparent);
     
-    background-color: var(--main-blue-dark-transparent);
+    /* background-color: var(--main-blue-dark-transparent); */
     background-image: url("embedded.webp");
 
     display: flex;
@@ -97,7 +96,7 @@ export const NavWheel: React.FC = function(){
     return (
         <NavSection>
             <Buttons>
-                <NavLink to="/" name={t('welcome')}/>
+                <NavLink to="/welcome" name={t('welcome')}/>
                 <NavLink to="/" name={t('portfolio')}/>
                 <NavLink to="/" name={t('techstack')}/>
                 <NavLink to="/contact" name={t('contact')}/>

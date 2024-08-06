@@ -10,6 +10,7 @@ export interface NavLinkProps {
 
 const StyledNavLink = styled(Link)`
     height: 10%;
+    width: 100%;
     font-size: 2rem;
     font-weight: 500;
     color: var(--main-blue-light);
@@ -19,7 +20,6 @@ const StyledNavLink = styled(Link)`
 
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 5%;
 
     &:hover {

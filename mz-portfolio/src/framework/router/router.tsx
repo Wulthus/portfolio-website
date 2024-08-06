@@ -17,6 +17,10 @@ export const portfolioRouter = createBrowserRouter([
           path:"/contact",
           element: <ContactPage />
         },
+        {
+          path:"/welcome",
+          element: <WelcomePage />
+        },
       ]
     },
   ])
